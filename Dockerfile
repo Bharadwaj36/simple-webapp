@@ -4,7 +4,6 @@ WORKDIR /opt/
 
 RUN	apt-get update -y 
 RUN	apt-get install -y python3 && \
-	apt-get install -y epel-release && \
 	apt-get install -y python3-pip 
 
 RUN	apt-get install -y mysql
