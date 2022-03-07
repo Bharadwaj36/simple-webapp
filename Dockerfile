@@ -6,8 +6,6 @@ RUN	apt-get update -y
 RUN	apt-get install -y python3 && \
 	apt-get install -y python3-pip 
 
-RUN	apt-get install -y mysql
-
 RUN     pip3 install flask && \
         pip3 install flask-mysql
 
