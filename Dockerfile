@@ -9,7 +9,7 @@ RUN	apt-get install -y python3 && \
 RUN     pip3 install flask && \
         pip3 install flask-mysql
 
-COPY /app.py /opt/
+COPY ./app.py /opt/
 COPY ./script.sh /opt/
 RUN chmod +x /opt/script.sh
 EXPOSE 5000
