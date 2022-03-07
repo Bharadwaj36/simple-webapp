@@ -29,7 +29,7 @@ def hello():
 
 @app.route('/read from database')
 def read():
-    cursor.execute("SELECT * FROM employees")
+    cursor.execute("SELECT * FROM Persons")
     row = cursor.fetchone()
     result = []
     while row is not None:
