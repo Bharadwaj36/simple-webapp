@@ -15,4 +15,5 @@ RUN     pip3 install flask && \
 COPY ./simple-webapp/app.py /opt/
 COPY ./script.sh /opt/
 RUN chmod +x /opt/script.sh
+EXPOSE 5000
 ENTRYPOINT ./script.sh ; /bin/bash 
