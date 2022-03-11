@@ -33,7 +33,7 @@ stages
 	   {
 	      steps{
 		    sh 'docker rm -f con1'  
-	            sh 'docker run -d --name con1 -p 8081:5000 bhaardwaj2727/python:$BUILD_NUMBER'
+	            sh 'docker run -itd --name con1 -p 8081:5000 bhaardwaj2727/python:$BUILD_NUMBER /bin/bash'
 		   }
 	    }
    }
