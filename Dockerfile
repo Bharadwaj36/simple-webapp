@@ -13,4 +13,4 @@ COPY ./app.py /opt/
 COPY ./script.sh /opt/
 RUN chmod +x /opt/script.sh
 EXPOSE 5000
-#ENTRYPOINT ./script.sh ; /bin/bash 
+ENTRYPOINT ./script.sh ; /bin/bash 
